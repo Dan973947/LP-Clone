@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #0B1220;
+  overflow: hidden;
+}
+
+header {
+  height: 25%;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  width: 100%;
+  height: calc(100% - 25% - 5%);
+  overflow-y: auto;
+}
+
+.main-container {
+  height: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.art-section {
+  height: auto;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+.art-section h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.art-section p {
+  color: #9FA9B7;
+  font-weight: 300;
+}
+
+.art-article {
+  height: auto;
+}
+
+.art-article h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.art-article__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.art-article article {
+  width: 10rem;
+  height: 10rem;
+  background-color: #253341;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.art-article img {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.article-content {
+  height: 7rem;
+  padding: 0.5rem 1rem;
+}
+
+.article-content h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.article-content h2 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #9FA9B7;
+}
+
+.article-content span {
+  font-size: 1.25rem;
+}
+
+.article-content__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-content__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-content__owners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  height: 5%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.footer-wrapper a {
+  display: flex;
+  width: auto;
+  height: 100%;
+  text-decoration: none;
+}
+
+.footer-wrapper span {
+  align-self: flex-end;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: white;
+}

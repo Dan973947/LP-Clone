@@ -99,7 +99,7 @@ main {
   align-items: center;
 }
 
-.btn-wrapper button:first-child {
+.btn-wrapper button {
   width: clamp(14rem, 23vw, 21rem);
   height: clamp(3rem, 6vw, 4.5rem);
   margin-right: 1rem;
@@ -109,23 +109,28 @@ main {
   border-radius: 1rem;
 }
 
-.btn-wrapper button:first-child:hover {
+.btn-wrapper button:hover {
   background-color: #5de3d1;
   border: 2px solid white;
   cursor: pointer;
 }
 
-.btn-wrapper button:last-child {
+.btn-wrapper a {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: clamp(5rem, 10vw, 8.5rem);
   height: clamp(3rem, 6vw, 4.5rem);
   border: 1px solid white;
+  text-decoration: none;
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
   background-color: black;
   border-radius: 1rem;
 }
 
-.btn-wrapper button:last-child:hover {
+.btn-wrapper a:hover {
   background-color: #2c0d54;
   border: 2px solid #b6baba;
   cursor: pointer;
