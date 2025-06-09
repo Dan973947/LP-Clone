@@ -139,5 +139,15 @@ main {
   .responsive-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-wrapper {
+    margin-right: 3rem;
+  }
+
+  .main-inner {
+  margin-top: 0;
   }
 }
