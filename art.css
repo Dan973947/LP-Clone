@@ -38,13 +38,13 @@ main {
 
 .art-section {
   height: auto;
-  margin-bottom: 1rem;
-  font-size: 0.75rem;
+  margin-bottom: 2rem;
+  font-size: clamp(0.75rem, 3vw, 1.5rem);
 }
 
 .art-section h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 600;
 }
 
@@ -59,7 +59,7 @@ main {
 
 .art-article h2 {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 500;
 }
 
@@ -70,8 +70,8 @@ main {
 }
 
 .art-article article {
-  width: 10rem;
-  height: 10rem;
+  width: clamp(10rem, 22vw, 15rem);
+  height: clamp(10rem, 22vw, 15rem);
   background-color: #253341;
   border: 1px solid black;
   border-radius: 1rem;
@@ -79,25 +79,25 @@ main {
 
 .art-article img {
   width: 100%;
-  height: 3rem;
+  height: clamp(3rem, 10vw, 6rem);
   border-radius: 1rem;
   object-fit: cover;
 }
 
 .article-content {
-  height: 7rem;
+  height: clamp(7rem, 20vw, 14rem);
   padding: 0.5rem 1rem;
 }
 
 .article-content h1 {
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: clamp(0.7rem, 1vw, 1rem);
   font-weight: 600;
 }
 
 .article-content h2 {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: #9FA9B7;
 }
@@ -146,4 +146,18 @@ footer {
   margin-left: 1rem;
   font-size: 1rem;
   color: white;
+}
+
+@media(min-width: 1024px) {
+  .article-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .article-content span {
+    font-size: 2.5rem;
+  }
+
+  .art-article__box {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
