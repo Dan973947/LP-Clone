@@ -10,7 +10,7 @@ html, body {
   font-family: "Poppins", sans-serif;
   color: white;
   background-color: #0B1220;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
